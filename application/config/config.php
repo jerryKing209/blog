@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 此处替换成你的域名和网站根目录名
 */
-$config['base_url'] = $_SERVER['SERVER_NAME'];
+$config['base_url'] = '';
 
 /*
 |--------------------------------------------------------------------------
