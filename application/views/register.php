@@ -39,7 +39,7 @@ background: #eee;
 
 <div class="login_box">
   <div class="login_title">用户注册</div>
-    <form class="layui-form layui-form-pane" method="post" action = "/register/register'">
+    <form class="layui-form layui-form-pane" method="post" action = "/register/register">
       <div class="layui-form-item">
       <h4 class="text-danger"><?php echo $login_error; ?></h4>
           <label class="layui-form-label">用户名：</label>
