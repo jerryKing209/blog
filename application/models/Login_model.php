@@ -99,6 +99,16 @@ class Login_model extends CI_Model{
 		if($hashed_password == md5($password)) return true;
 		return false;
 	}
+
+/*注册用户*/
+	function add_user($username, $password){
+		$table = "user";
+		$query = $this->db->insert($table, array('username' => $username, 'password' => md5($password)), 1);
+		if( $this->db->affected_rows() > 0 ) {
+			return true;
+		}
+		return false;
+	}
 	
 }
 ?>
