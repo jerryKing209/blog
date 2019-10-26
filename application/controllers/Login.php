@@ -42,9 +42,9 @@ class Login extends CI_Controller{
 			//获取用户输入信息
 			$username = $this->input->post('username');
 			$password = $this->input->post('password');
-			$checknum = $this->input->post('checknum');
+			//$checknum = $this->input->post('checknum');
 			//验证码输入判断
-			if($this->Login_model->check_num($checknum,$this->input->ip_address(),time()-1000)){
+			//if($this->Login_model->check_num($checknum,$this->input->ip_address(),time()-1000)){
 				//用户名输入判断
 				if($user = $this->Login_model->get_by_username($username)) {	
 					//密码输入判断
@@ -60,13 +60,13 @@ class Login extends CI_Controller{
 					//作出提示
 					$data['login_error'] = '登录失败:无效的用户名或密码!';
 				}
-			} else {
+			//} else {
 				//作出提示
-				$data['login_error'] = '验证码错误!';
-			}
+			//	$data['login_error'] = '验证码错误!';
+			//}
 		}
 		//过滤失败重新加载视图
-		$data['yzm'] = $this->Login_model->get_checkword();
+		//$data['yzm'] = $this->Login_model->get_checkword();
 		$this->load->view('login',$data);
 	}
 
@@ -91,6 +91,7 @@ class Login extends CI_Controller{
 			} else {
 				$this->Login_model->add_user($username, $password);
 				$data['tips'] = '注册成功！';
+				redirect('login/index');
 			}
 			//验证码输入判断
 		}
