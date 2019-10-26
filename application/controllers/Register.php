@@ -44,6 +44,7 @@ class Register extends CI_Controller{
 			} else {
 				$this->Login_model->add_user($username, $password);
 				$data['tips'] = '注册成功！';
+				redirect('login/index');
 			}
 			//验证码输入判断
 		}
