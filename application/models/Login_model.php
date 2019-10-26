@@ -62,9 +62,9 @@ class Login_model extends CI_Model{
         $cap = create_captcha($vals); 
         //定义数组
 		$data = array(
-			'captcha_time'  => $cap['time'],
+			'captcha_time'  => $cap['time'] ?? time(),
 			'ip_address'    => $this->input->ip_address(),
-			'word'      => $cap['word']
+			'word'      => $cap['word']??'',
 		);
         $query = $this->db->insert($table,$data);//将数据插入数据库存储
 		$expiration = time() - 1000; //清除数据的时间
