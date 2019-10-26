@@ -44,7 +44,7 @@
         <thead>
           <tr>
             <th>系统信息：</th>
-            <th>HXC博客系统v1.0</th>
+            <th>博客系统v1.0</th>
             <th></th>
             <th></th>
           </tr> 
@@ -75,7 +75,7 @@
             <td>服务器时间：</td>
             <td><?php echo date("Y-m-d H:i:s",time());?></td>
             <td>备注：</td>
-            <td><a href="http://www.huxinchun.com">HXC博客</a></td>
+            <td><a href="#">博客</a></td>
           </tr>
         </tbody>
       </table>

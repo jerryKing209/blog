@@ -61,8 +61,8 @@ a:hover{
     <li class="layui-nav-item"><a href="<?php echo site_url('Category/index');?>"><i class="layui-icon" style="font-size: 15px; color: #009688;">&#xe62a;</i>  栏目管理</a></li>
     <li class="layui-nav-item"><a href="<?php echo site_url('Article/index');?>"><i class="layui-icon" style="font-size: 15px; color: #009688;">&#xe60a;</i>  内容管理</a></li>
     <li class="layui-nav-item"><a href="<?php echo site_url('Admin/pass');?>"><i class="layui-icon" style="font-size: 15px; color: #009688;">&#xe612;</i>  用户管理</a></li>
-    <li class="layui-nav-item"><a href="<?php echo site_url('Admin/version');?>"><i class="layui-icon" style="font-size: 15px; color: #009688;">&#xe61e;</i>  版本计划</a></li>
-    <li class="layui-nav-item"><a href=""><i class="layui-icon" style="font-size: 15px; color: #009688;">&#xe61f;</i>   扩展功能</a></li>
+    <!-- <li class="layui-nav-item"><a href="<?php echo site_url('Admin/version');?>"><i class="layui-icon" style="font-size: 15px; color: #009688;">&#xe61e;</i>  版本计划</a></li> -->
+    <!-- <li class="layui-nav-item"><a href=""><i class="layui-icon" style="font-size: 15px; color: #009688;">&#xe61f;</i>   扩展功能</a></li> -->
   </ul>
 </div>
 <!--左侧导航结束-->
