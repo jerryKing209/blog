@@ -5,11 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>HXC博客v1.0-HXCblogv1.0</title>
-  <link rel="stylesheet" href="<?php echo base_url();?>public/theme/layui/css/layui.css">
-  <link rel="stylesheet" href="<?php echo base_url();?>public/theme/css/home.css">
+  <link rel="stylesheet" href="/public/theme/layui/css/layui.css">
+  <link rel="stylesheet" href="/public/theme/css/home.css">
   <!-- Bootstrap -->
-    <link href="<?php echo base_url();?>public/theme/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="<?php echo base_url();?>public/theme/layui/css/layui.css"  media="all">
+    <link href="/public/theme/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="/public/theme/layui/css/layui.css"  media="all">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,7 +27,7 @@ body{background: #eee;font-family: Microsoft YaHei;}
 	<ul class="layui-nav">
 		<li id="nav_bar_li" >
 			<a href="<?php echo site_url('Home/index')?>">
-			<img src="<?php echo base_url();?>public/theme/images/logo.png">
+			<img src="/public/theme/images/logo.png">
 			</a>
 		</li>
 		
@@ -61,7 +61,7 @@ body{background: #eee;font-family: Microsoft YaHei;}
 				<!--其他栏目结束-->
 		  </ul>
 		  <span id="mobile_img">
-		  	<img src="<?php echo base_url();?>public/theme/images/logo.png">
+		  	<img src="/public/theme/images/logo.png">
 		  </span>
 	</div>	
 </div>

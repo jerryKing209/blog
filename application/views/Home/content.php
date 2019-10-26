@@ -42,6 +42,6 @@
 </div>
 
 <!--百度UEditor代码高亮编辑器-->
-<script type="text/javascript" src="<?php echo base_url();?>public/ueditor/third-party/SyntaxHighlighter/shCore.js"></script>
-<link rel="stylesheet" href="<?php echo base_url();?>public/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css">
+<script type="text/javascript" src="/public/ueditor/third-party/SyntaxHighlighter/shCore.js"></script>
+<link rel="stylesheet" href="/public/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css">
 <script type="text/javascript">SyntaxHighlighter.all(); </script>
