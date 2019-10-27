@@ -36,12 +36,13 @@
 		<!--留言-->
 		<div class="col-md-12 message_box">
 			<div class="message_style" >留言区</div>
+			
 		</div>
 
 	</div>
 </div>
 
 <!--百度UEditor代码高亮编辑器-->
-<script type="text/javascript" src="/public/ueditor/third-party/SyntaxHighlighter/shCore.js"></script>
-<link rel="stylesheet" href="/public/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css">
+<script type="text/javascript" src="/public/ueditor2/third-party/SyntaxHighlighter/shCore.js"></script>
+<link rel="stylesheet" href="/public/ueditor2/third-party/SyntaxHighlighter/shCoreDefault.css">
 <script type="text/javascript">SyntaxHighlighter.all(); </script>
