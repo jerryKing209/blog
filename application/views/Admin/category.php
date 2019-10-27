@@ -16,10 +16,10 @@
                 <input type="text" id="inputCate1"  name = "category" lay-verify="required" placeholder="请输入栏目名称" autocomplete="off" class="layui-input">
               </div>
             
-              <label class="layui-form-label">修改时间：</label>
+<!--               <label class="layui-form-label">修改时间：</label>
               <div class="layui-input-inline">
                 <input type="text" id="inputTime3" name = "datetime" lay-verify="required" placeholder="请输入修改日期" autocomplete="off" class="layui-input">
-              </div>
+              </div> -->
             
               <div style="display: inline-block;">
                  <button class="layui-btn layui-btn-danger" type = "submit" id = "changecate">修改</button>

@@ -27,7 +27,7 @@ body{background: #eee;font-family: Microsoft YaHei;}
 	<ul class="layui-nav">
 		<li id="nav_bar_li" >
 			<a href="<?php echo site_url('Home/index')?>">
-			<img src="/public/theme/images/logo.png">
+			<!-- <img src="/public/theme/images/logo.png"> -->
 			</a>
 		</li>
 		

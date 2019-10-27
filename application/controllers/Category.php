@@ -34,7 +34,7 @@ class Category extends CI_Controller {
 	public function addcate() {
 		//获取分类信息
 		$category = $this->input->post('category');
-		$datetime = $this->input->post('datetime');
+		$datetime = $this->input->post('datetime') ?? time();
 		$info = array("catename"=>$category,"createtime"=>$datetime);
 		//执行添加操作
 		if($this->Category_model->add_category($info)) {

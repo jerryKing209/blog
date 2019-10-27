@@ -40,7 +40,7 @@ a:hover{
 <!--顶部导航开始-->
 <div class="nav_top">
 	<div class="nav_title">
-    <i class="layui-icon" style="font-size: 35px; color: #7eaeea;">&#xe62e;</i>HXC博客管理系统</div>
+    <i class="layui-icon" style="font-size: 35px; color: #7eaeea;">&#xe62e;</i>博客管理系统</div>
 	<div class="nav_li">
   	<ul class="layui-nav">
   	  <li class="layui-nav-item"><a href="<?php echo site_url('Home/index');?>" target="_blank"><i class="layui-icon" style="font-size: 15px; color: #009688;">&#xe632;</i> 网站首页</a></li>

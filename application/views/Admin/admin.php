@@ -2,7 +2,7 @@
 <div class="card_box">
 	<div class="layui-tab layui-tab-card admin_bg">
 	  <ul class="layui-tab-title">
-	    <li class="layui-this">名片设置</li>
+	    <!-- <li class="layui-this">名片设置</li> -->
 	  </ul>
 	  <div class="layui-tab-content" >
 	    <div class="layui-tab-item layui-show">
