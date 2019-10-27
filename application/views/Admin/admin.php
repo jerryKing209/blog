@@ -9,9 +9,9 @@
 			<!--表单-->
 			<form class="layui-form layui-form-pane"  method = "post" action = "<?php echo site_url('Admin/updateinfo');?>">
 			<!--头像开始-->
-			<div class="adminpic">
+			<!-- <div class="adminpic">
 				<img class="img-circle" src="<?php echo base_url();?><?php echo $info['photo']; ?>" >
-			</div>
+			</div> -->
 			<!--头像结束-->
 
 			<div class="card_text">
