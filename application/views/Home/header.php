@@ -60,9 +60,9 @@ body{background: #eee;font-family: Microsoft YaHei;}
 				}?>
 				<!--其他栏目结束-->
 		  </ul>
-		  <span id="mobile_img">
+		 <!--  <span id="mobile_img">
 		  	<img src="/public/theme/images/logo.png">
-		  </span>
+		  </span> -->
 	</div>	
 </div>
 <!--移动导航结束-->

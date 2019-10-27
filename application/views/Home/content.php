@@ -34,13 +34,46 @@
 		</div>
 
 		<!--留言-->
-		<div class="col-md-12 message_box">
+		<!-- <div class="col-md-12 message_box">
 			<div class="message_style" >留言区</div>
 			
+		</div> -->
+		<div class="col-md-12 message_box">
+			<div class="message_style" style="background-color: #31cebf">留言区</div>
+			<form class="form-horizontal" method="post" action="<?php echo site_url('Comment/add');?>/<?php echo $article['id']; ?>">
+				<div class="form-group">
+					<div class="col-sm-8">
+						<div class="pull-left form-control" rows="1" name="comment" style="margin: 0px 4px 0px 0px; width: 70%; height: 100px;"><?php echo $comment['content']; ?>
+						</div>
+     					<div class="col-sm-2" style="position:absolute;right:10%;bottom:0">
+     						<button type="submit" class="btn btn-default">发表留言</button>
+     					</div>
+					</div>
+				</div>
+			</form>
+			<h1 style="border:black solid 1px"></h1>
+				<div class="media">
+				 	<a href="#" class="pull-left">
+				 		<img src="https://www.runoob.com/try/bootstrap/layoutit/v3/default8.jpg" class="media-object" alt="">
+					 </a>
+					<div class="media-body">
+						<h4 class="media-heading">Nested media heading</h4>
+						 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+					</div>
+				</div>
+				<div class="media">
+					<a href="#" class="pull-left">
+						<img src="https://www.runoob.com/try/bootstrap/layoutit/v3/default8.jpg" class="media-object" alt="">
+					</a>
+					<div class="media-body">
+						<h4 class="media-heading">Nested media heading</h4>
+						 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+					</div>
+				</div>
+			</div>
 		</div>
-
 	</div>
-</div>
+</<div>
 
 <!--百度UEditor代码高亮编辑器-->
 <script type="text/javascript" src="/public/ueditor2/third-party/SyntaxHighlighter/shCore.js"></script>
