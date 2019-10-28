@@ -117,6 +117,7 @@ class Home extends CI_Controller{
 		//获取文章具体内容
 		$aid = $this->uri->segment(3);
 		$data['content'] = $this->Home_model->getcontent($aid);
+		$data['comment'] = ['content' => '123'];
 		//加载视图	
 		$this->load->view('Home/header',$data);
 		$this->load->view('Home/content');
