@@ -86,7 +86,7 @@ class Comment extends CI_Controller {
 				'comment' 	 => $comment,
 				'user_id' 	 => $uid,
 				'article_id' => $aid,
-				'createtime' => date('Y-m-d H:i:s', time())
+				'create_time' => date('Y-m-d H:i:s', time())
 			];
 			$ret = $this->Comment_model->add_comment($data);
 			if ($ret > 0) {
