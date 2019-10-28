@@ -14,6 +14,7 @@ class Home_model extends CI_Model{
 		$table = "user";
 		$query = $this->db->get_where($table,array('uid'=>1));
 		$result = $query->row_array();
+		if (isset($result['password'])) unset($result['password']);
 		return $result;
 	}
 	
@@ -59,6 +60,16 @@ class Home_model extends CI_Model{
 		$query = $this->db->get_where($table,array('id'=>$aid));
 		$result = $query->row_array();
 		return $result;
+	}
+
+	function get_article_comment($aid){
+		$this->db->select('comment.*, user.username,user.head_img');
+		$this->db->from('comment');
+		$this->db->join('user', 'comments.user_id = user.uid');
+		$this->db->where('comment.article_id', $aid);
+		$query = $this->db->get();
+		$result = $query->result_array();
+		return $result;		
 	}
 }
 ?>

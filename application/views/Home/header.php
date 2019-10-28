@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <title>HXC博客v1.0-HXCblogv1.0</title>
+  <title>博客v1.0-blogv1.0</title>
   <link rel="stylesheet" href="/public/theme/layui/css/layui.css">
   <link rel="stylesheet" href="/public/theme/css/home.css">
   <!-- Bootstrap -->

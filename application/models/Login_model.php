@@ -24,6 +24,22 @@ class Login_model extends CI_Model{
 		}
 	}
 
+/*获取用户id*/
+	function get_user_id(){
+		$user = $this->session->userdata('user');
+		if (empty($user) || empty($user['uid'])) {
+			return 0;
+		} else {
+			return $user['uid'];
+		}
+	}
+	
+/*获取用户信息*/
+	function get_user_info(){
+		$user = $this->session->userdata('user');
+		return $user ?: [];
+	}
+
 /*允许通过*/	
 	function allow_pass($user_data){
 		$this->session->set_userdata(array('last_activity' => time(),'logged_in' => 'yes', 'user' => $user_data ));

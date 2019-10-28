@@ -40,10 +40,10 @@
 		</div> -->
 		<div class="col-md-12 message_box">
 			<div class="message_style" style="background-color: #31cebf">留言区</div>
-			<form class="form-horizontal" method="post" action="<?php echo site_url('Comment/add');?>/<?php echo $content['id']; ?>">
+			<form class="form-horizontal" method="post" action="<?php echo site_url('Comment/addcomment');?>/<?php echo $content['id']; ?>">
 				<div class="form-group">
 					<div class="col-sm-8">
-						<div class="pull-left form-control" rows="1" name="comment" style="margin: 0px 4px 0px 0px; width: 70%; height: 100px;"><?php echo $comment['content']; ?>
+						<div class="pull-left form-control" rows="1" name="comment" style="margin: 0px 4px 0px 0px; width: 70%; height: 100px;">
 						</div>
      					<div class="col-sm-2" style="position:absolute;right:10%;bottom:0">
      						<button type="submit" class="btn btn-default">发表留言</button>
@@ -52,24 +52,18 @@
 				</div>
 			</form>
 			<h1 style="border:black solid 1px"></h1>
+			<?php foreach($comments as $comment){ ?>  
+			<?php if (empty($comment)) continue; ?>  
 				<div class="media">
 				 	<a href="#" class="pull-left">
-				 		<img src="https://www.runoob.com/try/bootstrap/layoutit/v3/default8.jpg" class="media-object" alt="">
+				 		<img src="<?php if(empty($comment['head_img'])) {echo 'https://www.runoob.com/try/bootstrap/layoutit/v3/default8.jpg';} else { echo $comment['head_img'];}?>" class="media-object" alt="">
 					 </a>
 					<div class="media-body">
-						<h4 class="media-heading">Nested media heading</h4>
-						 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+						<h4 class="media-heading"><?php if (empty($comment['username'])) { echo '匿名';} else { echo $comment['username'];} ?></h4>
+						 <?php if (empty($comment['comment'])) { echo '网络异常，请刷新页面！';} else { echo $comment['comment'];} ?>
 					</div>
 				</div>
-				<div class="media">
-					<a href="#" class="pull-left">
-						<img src="https://www.runoob.com/try/bootstrap/layoutit/v3/default8.jpg" class="media-object" alt="">
-					</a>
-					<div class="media-body">
-						<h4 class="media-heading">Nested media heading</h4>
-						 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
-					</div>
-				</div>
+				<?php }?>
 			</div>
 		</div>
 	</div>
