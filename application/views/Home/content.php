@@ -40,7 +40,7 @@
 		</div> -->
 		<div class="col-md-12 message_box">
 			<div class="message_style" style="background-color: #31cebf">留言区</div>
-			<form class="form-horizontal" method="post" action="<?php echo site_url('Comment/add');?>/<?php echo $article['id']; ?>">
+			<form class="form-horizontal" method="post" action="<?php echo site_url('Comment/add');?>/<?php echo $content['id']; ?>">
 				<div class="form-group">
 					<div class="col-sm-8">
 						<div class="pull-left form-control" rows="1" name="comment" style="margin: 0px 4px 0px 0px; width: 70%; height: 100px;"><?php echo $comment['content']; ?>
