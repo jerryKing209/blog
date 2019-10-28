@@ -43,8 +43,7 @@
 			<form class="form-horizontal" method="post" action="<?php echo site_url('Comment/addcomment');?>/<?php echo $content['id']; ?>">
 				<div class="form-group">
 					<div class="col-sm-8">
-						<div class="pull-left form-control" rows="1" name="comment" style="margin: 0px 4px 0px 0px; width: 70%; height: 100px;">
-						</div>
+						<input type="" name=""> class="pull-left form-control" rows="1" name="comment" style="margin: 0px 4px 0px 0px; width: 70%; height: 100px;">
      					<div class="col-sm-2" style="position:absolute;right:10%;bottom:0">
      						<button type="submit" class="btn btn-default">发表留言</button>
      					</div>
