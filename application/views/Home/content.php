@@ -52,6 +52,12 @@
 				</div>
 			</form>
 			<h1 style="border:black solid 1px"></h1>
+			<?php if(empty($comments)) { ?>
+				<div class="media" style="text-align:center" >
+	
+				<?php echo "空空如也，来抢沙发吧。。。";?>
+				</div>
+			<?php } else {?>  
 			<?php foreach($comments as $comment){ ?>  
 			<?php if (empty($comment)) continue; ?>  
 				<div class="media">
@@ -63,7 +69,7 @@
 						 <?php if (empty($comment['comment'])) { echo '网络异常，请刷新页面！';} else { echo $comment['comment'];} ?>
 					</div>
 				</div>
-				<?php }?>
+				<?php } }?>
 			</div>
 		</div>
 	</div>
