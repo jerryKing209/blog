@@ -107,11 +107,11 @@ class CI_DB_oci8_forge extends CI_DB_forge {
 			{
 				$field[$i]['_literal'] = "\n\t".$this->_process_column($field[$i]);
 
-				if ( ! empty($field[$i]['comment']))
+				if ( ! empty($field[$i]['Comment2']))
 				{
 					$sqls[] = 'COMMENT ON COLUMN '
 						.$this->db->escape_identifiers($table).'.'.$this->db->escape_identifiers($field[$i]['name'])
-						.' IS '.$field[$i]['comment'];
+						.' IS '.$field[$i]['Comment2'];
 				}
 
 				if ($alter_type === 'MODIFY' && ! empty($field[$i]['new_name']))

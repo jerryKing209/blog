@@ -59,7 +59,7 @@ class Home_model extends CI_Model{
 
 	function get_article_comment($aid){
 		$this->db->select('comment.*, user.username,user.head_img');
-		$this->db->from('comment');
+		$this->db->from('Comment2');
 		$this->db->join('user', 'comment.user_id = user.uid');
 		$this->db->where('comment.article_id', $aid);
 		$query = $this->db->get();

@@ -140,11 +140,11 @@ class CI_DB_postgre_forge extends CI_DB_forge {
 					.' TO '.$this->db->escape_identifiers($field[$i]['new_name']);
 			}
 
-			if ( ! empty($field[$i]['comment']))
+			if ( ! empty($field[$i]['Comment2']))
 			{
 				$sqls[] = 'COMMENT ON COLUMN '
 					.$this->db->escape_identifiers($table).'.'.$this->db->escape_identifiers($field[$i]['name'])
-					.' IS '.$field[$i]['comment'];
+					.' IS '.$field[$i]['Comment2'];
 			}
 		}
 

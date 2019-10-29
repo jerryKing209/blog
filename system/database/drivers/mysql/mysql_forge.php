@@ -194,7 +194,7 @@ class CI_DB_mysql_forge extends CI_DB_forge {
 			.$field['default']
 			.$field['auto_increment']
 			.$field['unique']
-			.(empty($field['comment']) ? '' : ' COMMENT '.$field['comment'])
+			.(empty($field['Comment2']) ? '' : ' COMMENT '.$field['Comment2'])
 			.$extra_clause;
 	}
 
