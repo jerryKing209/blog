@@ -64,7 +64,7 @@
                             <img src="<?php if(empty($comment['head_img'])) {echo 'https://www.runoob.com/try/bootstrap/layoutit/v3/default8.jpg';} else { echo $comment['head_img'];}?>" class="media-object" alt="">
                         </a>
                         <div class="media-body">
-                            <div><span style="color:gray"><?php if (empty($comment['username'])) { echo '匿名';} else { echo $comment['username'];} ?></span>
+                            <div style="margin-bottom: 5px"><span style="color:gray"><?php if (empty($comment['username'])) { echo '匿名';} else { echo $comment['username'];} ?></span>
                                 <span style="color:gray;margin:10px"><?php if (empty($comment['create_time'])) { echo '';} else { echo $comment['create_time'];} ?></span>
                             </div>
                             <?php if (empty($comment['comment'])) { echo '网络异常，请刷新页面！';} else { echo $comment['comment'];} ?>
