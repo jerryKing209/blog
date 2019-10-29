@@ -65,7 +65,7 @@
                         </a>
                         <div class="media-body">
                             <h4 class="media-heading"><?php if (empty($comment['username'])) { echo '匿名';} else { echo $comment['username'];} ?></h4>
-                            <?php if (empty($comment['Comment2'])) { echo '网络异常，请刷新页面！';} else { echo $comment['Comment2'];} ?>
+                            <?php if (empty($comment['comment'])) { echo '网络异常，请刷新页面！';} else { echo $comment['Comment2'];} ?>
                         </div>
                     </div>
                 <?php } }?>
