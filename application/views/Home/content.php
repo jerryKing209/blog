@@ -91,10 +91,7 @@
                     //result = JSON.stringify(result);
                     //result = JSON.parse(result);
                     alert(result.msg);
-                    if (result.status == true) {
-
-                    }
-                    ;
+                    
                 },
                 error : function() {
                     alert('网络异常，请重试');
