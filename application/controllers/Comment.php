@@ -75,12 +75,12 @@ class Comment extends CI_Controller {
 		$data
 		['route'] = '/Comment/addcomment/'.$aid; 
 		if (empty($comment)) {
-			$data['tips'] = '不能发表空评论';
+			$data['msg'] = '不能发表空评论';
 			goto END;
 		}
 		$article = $this->Article_model->get_art_info($aid);
 		if (empty($article)) {
-			$data['tips'] = "该篇blog已下架!";
+			$data['msg'] = "该篇blog已下架!";
 		} else {
 			
 			$uid = $this->Login_model->get_user_id();
@@ -92,9 +92,9 @@ class Comment extends CI_Controller {
 			];
 			$ret = $this->Comment_model->add_comment($data);
 			if ($ret > 0) {
-				$data['tips'] = "留言成功！";
+				$data['msg'] = "留言成功！";
 			} else {
-				$data['tips'] = "留言失败请重试一次！";
+				$data['msg'] = "留言失败请重试一次！";
 			}
 			
 		}
@@ -102,7 +102,7 @@ class Comment extends CI_Controller {
 		$data['comment'] = $this->Comment_model->get_comment_list(1, 10, $aid);
 		//加载视图分配变量
 		END:
-		$this->load->view('tips', $data);
+		return $data;
 	}
 
 /*添加新文章*/
