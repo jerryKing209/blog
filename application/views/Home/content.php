@@ -88,10 +88,10 @@
                 data: $('#form1').serialize(),
                 success: function (result) {
                     console.log(result);//打印服务端返回的数据(调试用)
-                    result = JSON.stringify(result);
+                    result = JSON.parse(result);
                     alert(result.msg);
                     if (result.status == true) {
-                        
+
                     }
                     ;
                 },
