@@ -1,8 +1,3 @@
-<!--
-文件名：首页模型
-时间：20170815 更新
--->
-
 <?php
 class Home_model extends CI_Model{
 	function __construct(){

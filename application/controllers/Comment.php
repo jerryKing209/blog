@@ -1,9 +1,3 @@
-<!--
-*文件名：后台文章模块
-*时间：20170815
-*作者：HXC
--->
-
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ini_set('date.timezone','Asia/Shanghai');//时区设置

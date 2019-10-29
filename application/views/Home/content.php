@@ -1,5 +1,4 @@
-﻿<!-- 文件名：前台文章页 作者：HXC 时间：20170802 -->
-<div class="container">
+﻿<div class="container">
 	<div class="row">
 		<div class="col-md-12" style="margin-top: 60px;" >
 			<div class="box_style">
@@ -40,7 +39,7 @@
 		</div> -->
 		<div class="col-md-12 message_box">
 			<div class="message_style" style="background-color: #31cebf">留言区</div>
-			<form id = "form1" class="form-horizontal"  action="<?php echo site_url('Comment/addcomment');?>/<?php echo $content['id']; ?>">
+			<form id = "form1" class="form-horizontal"  action="">
 				<div class="form-group">
 					<div class="col-sm-8">
 						<input  type="hidden" class="pull-left form-control" rows="1" name="articleid" style="" value = "<?php echo $content['id'];?>">
