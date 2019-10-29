@@ -30,14 +30,6 @@
     </div>
     </a>
 
-      <!--用户管理-->
-      <a href = "<?php echo site_url('Admin/comment'); ?>" >
-          <div class="home_li" >
-              <div class="home_img"><i class="layui-icon" style="font-size:72px; color: #1E9FFF;">&#xe611;</i> </div>
-              <div class="home_title">评论管理</div>
-              <div class="home_con">查看/删除评论内容</div>
-          </div>
-      </a>
     <!--后台主页功能模块结束-->
 
     <!--信息信息列表开始-->
