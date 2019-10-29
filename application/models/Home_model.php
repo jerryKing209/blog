@@ -63,6 +63,7 @@ class Home_model extends CI_Model{
 		$this->db->join('user', 'comment.user_id = user.uid');
 		$this->db->where('comment.article_id', $aid);
         $this->db->order_by('comment.id', 'DESC');
+        $this->db->limit(10);
 		$query = $this->db->get();
 		$result = $query->result_array();
 		return $result;		
