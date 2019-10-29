@@ -1,6 +1,4 @@
-﻿<!--文件名：博客栏目页 时间：201707015 作者：HXC -->
-<!--栏目页banner开始-->
-<div class="banner blog_banner">
+﻿<div class="banner blog_banner">
 	<div class="banner_text blog_banner_text" style="">不会写文章的程序员不是好设计师!</div>
 </div>
 <!--栏目页banner结束-->
@@ -17,7 +15,7 @@
 		<div class="hot_art">
 			<!--热门文章开始-->
 				<div class="index_left_list index_left_list2" >热门文章</div>
-				<?php $var = 1; foreach($order as $val){ 
+				<?php $var = 1; foreach($order as $val){
 					$segments = array('Home','content',$val['id']);
 					$url = site_url($segments);
 				?>
@@ -57,11 +55,11 @@
 			<div class="index_left_list2 index_left_list" >
 					博主名片
 			</div>
-			
-			<div style="display: block;">			
+
+			<div style="display: block;">
 				<p >博主：<?php echo $userinfo['username'];?></p>
 				<p >语录：<?php echo $userinfo['location'];?></p>
-				<p >邮箱：<?php echo $userinfo['email']?></p>	
+				<p >邮箱：<?php echo $userinfo['email']?></p>
 			</div>
 			<!--联系方式结束-->
 		</div>
@@ -71,21 +69,21 @@
 	<!--右侧开始-->
 	<div class="col-md-8 pad-left">
 		<div style="width: 100%;">
-			<?php foreach($article as $val){   
+			<?php foreach($article as $val){
 						$segments = array('Home','content',$val['id']);
 						$url = site_url($segments);
-					?> 
+					?>
 			    <div class="right_div_li" style="margin-bottom:15px;background: #fff;">
 					<a class="a_style" href = "<?php echo $url;?>"  name = "<?php echo $val['id']; ?>">
 						<!--标题-->
 						<div class="index_list_right_title" >
 							<?php echo $val['title'];?>
 						</div>
-						<!--内容-->		
+						<!--内容-->
 						<div class="index_description_box" >
 							<span style = "font-size:16px;color:#009688">摘要内容:</span>
 							<span class="index_description">
-							<?php echo $val['description'];?></span>	
+							<?php echo $val['description'];?></span>
 						</div>
 					</a>
 					<div class="list_bottom">
@@ -128,5 +126,5 @@
 
 
 
-		
-	
+
+

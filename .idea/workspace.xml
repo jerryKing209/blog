@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="240bb16f-9db4-40e2-b8c1-543186706a30" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/Home/content.php" afterPath="$PROJECT_DIR$/application/views/Home/content.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/Home/footer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/Home/header.php" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/Home/blog.php" afterPath="$PROJECT_DIR$/application/views/Home/blog.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -79,10 +81,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="content.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/Home/content.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
+            <state relative-caret-position="1445">
               <caret line="85" column="31" lean-forward="false" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
               <folding />
             </state>
@@ -109,6 +111,52 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="blog.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/Home/blog.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="48" lean-forward="false" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#2;n#div#1;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#3;n#div#1;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#4;n#div#1;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#1;n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="e#2642#2648#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="e#2821#2827#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/views/Home/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="745">
+              <caret line="67" column="13" lean-forward="false" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/Home/footer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -124,6 +172,9 @@
         <option value="$PROJECT_DIR$/application/models/Home_model.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/application/views/Home/content.php" />
+        <option value="$PROJECT_DIR$/application/views/Home/blog.php" />
+        <option value="$PROJECT_DIR$/application/views/Home/header.php" />
+        <option value="$PROJECT_DIR$/application/views/Home/footer.php" />
       </list>
     </option>
   </component>
@@ -352,12 +403,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572329157942</updated>
-      <workItem from="1572329159767" duration="3552000" />
+      <workItem from="1572329159767" duration="3812000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3552000" />
+    <option name="totallyTimeSpent" value="3812000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -502,8 +553,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/Home/content.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
+        <state relative-caret-position="1445">
           <caret line="85" column="31" lean-forward="false" selection-start-line="85" selection-start-column="31" selection-end-line="85" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/Home/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="48" lean-forward="false" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#2;n#div#1;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#3;n#div#1;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#4;n#div#1;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#a#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="e#2642#2648#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="e#2821#2827#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/Home/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="745">
+          <caret line="67" column="13" lean-forward="false" selection-start-line="67" selection-start-column="13" selection-end-line="67" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/Home/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
           <folding />
         </state>
       </provider>
