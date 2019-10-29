@@ -52,7 +52,9 @@ class Comment extends CI_Controller {
         //加载视图分配变量
         END:
         header('Content-Type:application/json; charset=utf-8');
-        echo json_encode($data);
+
+        echo json_encode(json_decode(trim(json_encode($data),chr(239).chr(187).chr(191)),true));
+
         exit;
     }
 
