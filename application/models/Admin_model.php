@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 class Admin_model extends CI_Model{
 	function __construct(){
 		parent::__construct();
@@ -82,6 +82,31 @@ class Admin_model extends CI_Model{
 		$this->db->update($table,$info);
 		return $this->db->affected_rows();
 	}
-}
 
-?>
+	function getcomments($uid){
+        $this->db->select('comment.*, user.username,user.head_img');
+        $this->db->from('comment');
+        $this->db->join('user', 'comment.user_id = user.uid');
+        $this->db->where('comment.article_id', $aid);
+        $this->db->order_by('comment.id', 'DESC');
+        $this->db->limit(10);
+        $query = $this->db->get();
+        $result = $query->result_array();
+        return $result;
+    }
+
+    function get_article($perPage,$offset,$cid = 0){
+        $table = "article";
+        if($cid == 0){
+            $this->db->order_by('id','DESC');//降序排序，id越大最新发布的在前
+            $query = $this->db->get($table,$perPage,$offset);
+            $result = $query->result_array();
+            return $result;
+        }else{
+            $this->db->order_by('id','DESC');//降序排序，id越大最新发布的在前
+            $query = $this->db->get_where($table,array("cid"=>$cid),$perPage,$offset);
+            $result = $query->result_array();
+            return $result;
+        }
+    }
+}

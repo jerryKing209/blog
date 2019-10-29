@@ -28,6 +28,31 @@ class Comment_model extends CI_Model{
 		$result = $this->db->affected_rows();
 		return $result;
 	}
+
+/*获取评论数*/
+	function getcommentnum($uid){
+        $this->db->select('comment.id');
+        $this->db->from('comment');
+        $this->db->join('article', 'comment.article_id = article.id');
+        $this->db->where('article.author_id', $uid);
+        $query = $this->db->get();
+        $commentnums = $query->num_fields();
+        return $commentnums ?: 0;
+    }
+
+    /*获取后台评论列表*/
+    function get_admin_comments($perPage = 1,$offset = 10,$uid = 0){
+	    $perPage = ($perPage < 1) ? 1 : $perPage;
+        $this->db->select('comment.*, article.title,user.username,user.head_img');
+        $this->db->from('comment');
+        $this->db->join('article', 'comment.article_id = article.id');
+        $this->db->join('user', 'comment.user_id = user.uid');
+        $this->db->where('comment.article_id', $uid);
+        $this->db->order_by('comment.id', 'DESC');
+        $this->db->limit($offset, ($perPage-1) * $offset);
+        $query = $this->db->get();
+        $result = $query->result_array();
+        return $result;
+    }
 }
 
-?>
