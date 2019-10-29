@@ -80,7 +80,7 @@
 <link rel="stylesheet" href="/public/ueditor2/third-party/SyntaxHighlighter/shCoreDefault.css">
 <script type="text/javascript">SyntaxHighlighter.all(); </script>
 <script type="text/javascript" charset="utf-8" >
-	function login() {
+	function addcomment() {
             $.ajax({
             //几个参数需要注意一下
                 type: "POST",//方法类型
