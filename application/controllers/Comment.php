@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ini_set('date.timezone','Asia/Shanghai');//时区设置
+header('Content-Type:application/json; charset=utf-8');
 class Comment extends CI_Controller {
 
 	public function __construct() {
