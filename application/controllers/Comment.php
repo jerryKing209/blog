@@ -101,7 +101,8 @@ class Comment extends CI_Controller {
 		$data['comment'] = $this->Comment_model->get_comment_list(1, 10, $aid);
 		//加载视图分配变量
 		END:
-		return json_encode($data);
+		echo json_encode($data); 
+		exit;
 	}
 
 /*添加新文章*/
