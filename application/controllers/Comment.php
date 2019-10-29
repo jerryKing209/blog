@@ -23,6 +23,7 @@ class Comment extends CI_Controller {
         $aid = $this->input->post('articleid');
         $comment = $this->input->post('comment');
         $data['route'] = '/Comment/addcomment/'.$aid;
+        $data['status'] = false;
         if (empty($comment)) {
             $data['msg'] = '不能发表空评论';
             goto END;
@@ -41,6 +42,7 @@ class Comment extends CI_Controller {
             ];
             $ret = $this->Comment_model->add_comment($data);
             if ($ret > 0) {
+                $data['status'] = false;
                 $data['msg'] = "留言成功！";
             } else {
                 $data['msg'] = "留言失败请重试一次！";

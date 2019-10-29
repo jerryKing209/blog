@@ -88,7 +88,8 @@
                 data: $('#form1').serialize(),
                 success: function (result) {
                     console.log(result);//打印服务端返回的数据(调试用)
-                    if (result.resultCode == 200) {
+                    result = JSON.stringify(result);
+                    if (result.status == 200) {
                         alert(result.msg);
                     }
                     ;
