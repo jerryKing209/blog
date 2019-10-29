@@ -91,7 +91,7 @@
                     //result = JSON.stringify(result);
                     //result = JSON.parse(result);
                     alert(result.msg);
-                    
+
                 },
                 error : function() {
                     alert('网络异常，请重试');
