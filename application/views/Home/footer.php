@@ -14,9 +14,7 @@
 <script src="/public/theme/layui/layui.js" charset="utf-8"></script>
 <script src="/public/theme/js/layuimod.js" charset="utf-8"></script>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-<!-- 引入bootstrap -->
 <script src="/public/theme/bootstrap/js/bootstrap.min.js"></script>
 <script type = "text/javascript">
     $(function(){
