@@ -42,7 +42,7 @@ class Comment extends CI_Controller {
             ];
             $ret = $this->Comment_model->add_comment($data);
             if ($ret > 0) {
-                $data['status'] = false;
+                $data['status'] = true;
                 $data['msg'] = "留言成功！";
             } else {
                 $data['msg'] = "留言失败请重试一次！";
