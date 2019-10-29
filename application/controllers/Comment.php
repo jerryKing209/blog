@@ -1,7 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ini_set('date.timezone','Asia/Shanghai');//时区设置
-header('Content-Type:application/json; charset=utf-8');
 class Comment extends CI_Controller {
 
 	public function __construct() {
@@ -96,6 +95,7 @@ class Comment extends CI_Controller {
 		$data['comment'] = $this->Comment_model->get_comment_list(1, 10, $aid);
 		//加载视图分配变量
 		END:
+		header('Content-Type:application/json; charset=utf-8');
 		echo json_encode($data); 
 		exit;
 	}
