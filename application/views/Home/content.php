@@ -94,7 +94,7 @@
                     }
                     ;
                 },
-                error : function() {
+                error : function(result) {
                     alert(result.msg);
                 }
             });
