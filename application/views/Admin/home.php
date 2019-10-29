@@ -1,5 +1,4 @@
-<!-- 后台导航 时间：20170721 作者：HXC -->
-<!--系统信息部分样式-->
+﻿<!--系统信息部分样式-->
 <div class="home_box" >
   <div class="home_div" >
    <!--后台主页功能模块开始-->
@@ -30,6 +29,15 @@
        <div class="home_con">添加/修改/更新/用户信息</div>
     </div>
     </a>
+
+      <!--用户管理-->
+      <a href = "<?php echo site_url('Admin/comment'); ?>" >
+          <div class="home_li" >
+              <div class="home_img"><i class="layui-icon" style="font-size:72px; color: #1E9FFF;">&#xe611;</i> </div>
+              <div class="home_title">评论管理</div>
+              <div class="home_con">查看/删除评论内容</div>
+          </div>
+      </a>
     <!--后台主页功能模块结束-->
 
     <!--信息信息列表开始-->
@@ -68,7 +76,7 @@
             <td>操作系统：</td>
             <td><?PHP echo PHP_OS; ?></td>
             <td>开发时间：</td>
-            <td>2017年8月</td>
+            <td>2019年10月</td>
           </tr>
           
           <tr>
