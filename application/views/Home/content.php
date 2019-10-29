@@ -40,12 +40,13 @@
 		</div> -->
 		<div class="col-md-12 message_box">
 			<div class="message_style" style="background-color: #31cebf">留言区</div>
-			<form class="form-horizontal" method="post" action="<?php echo site_url('Comment/addcomment');?>/<?php echo $content['id']; ?>">
+			<form id = "myForm" class="form-horizontal"  action="<?php echo site_url('Comment/addcomment');?>/<?php echo $content['id']; ?>">
 				<div class="form-group">
 					<div class="col-sm-8">
+						<input  type="hidden" class="pull-left form-control" rows="1" name="articleid" style="" value = "<?php echo $content['id'];?>">
 						<input  class="pull-left form-control" rows="1" name="comment" style="margin: 0px 4px 0px 0px; width: 70%; height: 100px;">
      					<div class="col-sm-2" style="position:absolute;right:10%;bottom:0">
-     						<button type="submit" class="btn btn-default">发表留言</button>
+     						<button type="button" onclick="addcomment()" class="btn btn-default">发表留言</button>
      					</div>
 					</div>
 				</div>
@@ -78,3 +79,24 @@
 <script type="text/javascript" src="/public/ueditor2/third-party/SyntaxHighlighter/shCore.js"></script>
 <link rel="stylesheet" href="/public/ueditor2/third-party/SyntaxHighlighter/shCoreDefault.css">
 <script type="text/javascript">SyntaxHighlighter.all(); </script>
+<script type="text/javascript" charset="utf-8" >
+	function login() {
+            $.ajax({
+            //几个参数需要注意一下
+                type: "POST",//方法类型
+                dataType: "json",//预期服务器返回的数据类型
+                url: "Comment/addcomment" ,//url
+                data: $('#form1').serialize(),
+                success: function (result) {
+                    console.log(result);//打印服务端返回的数据(调试用)
+                    if (result.resultCode == 200) {
+                        alert(result.msg);
+                    }
+                    ;
+                },
+                error : function() {
+                    alert(result.msg);
+                }
+            });
+        }
+</script>
