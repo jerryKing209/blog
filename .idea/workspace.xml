@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="240bb16f-9db4-40e2-b8c1-543186706a30" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/application/views/Home/content.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/application/controllers/Comment2.php" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,29 +20,6 @@
             <state relative-caret-position="337">
               <caret line="88" column="9" lean-forward="false" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Comment2.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/controllers/Comment2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1700">
-              <caret line="100" column="5" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="100" selection-end-column="5" />
-              <folding>
-                <marker date="1572330118642" expanded="true" signature="1147:1153" ph=" " />
-                <marker date="1572330118642" expanded="true" signature="1153:1159" ph=" " />
-                <marker date="1572330118642" expanded="true" signature="1310:1316" ph=" " />
-                <marker date="1572330118642" expanded="true" signature="1316:1322" ph=" " />
-                <marker date="1572330118642" expanded="true" signature="1488:1494" ph=" " />
-                <marker date="1572330118642" expanded="true" signature="1494:1500" ph=" " />
-                <marker date="1572330118642" expanded="true" signature="1654:1660" ph=" " />
-                <marker date="1572330118642" expanded="true" signature="1660:1666" ph=" " />
-                <marker date="1572330118642" expanded="true" signature="1792:1798" ph=" " />
-                <marker date="1572330118642" expanded="true" signature="1798:1804" ph=" " />
-                <marker date="1572330118642" expanded="true" signature="1930:1936" ph=" " />
-                <marker date="1572330118642" expanded="true" signature="1936:1942" ph=" " />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -336,18 +313,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572329157942</updated>
-      <workItem from="1572329159767" duration="2629000" />
+      <workItem from="1572329159767" duration="2680000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2629000" />
+    <option name="totallyTimeSpent" value="2680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -415,20 +391,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1700">
           <caret line="100" column="5" lean-forward="false" selection-start-line="64" selection-start-column="4" selection-end-line="100" selection-end-column="5" />
-          <folding>
-            <marker date="1572330118642" expanded="true" signature="1147:1153" ph=" " />
-            <marker date="1572330118642" expanded="true" signature="1153:1159" ph=" " />
-            <marker date="1572330118642" expanded="true" signature="1310:1316" ph=" " />
-            <marker date="1572330118642" expanded="true" signature="1316:1322" ph=" " />
-            <marker date="1572330118642" expanded="true" signature="1488:1494" ph=" " />
-            <marker date="1572330118642" expanded="true" signature="1494:1500" ph=" " />
-            <marker date="1572330118642" expanded="true" signature="1654:1660" ph=" " />
-            <marker date="1572330118642" expanded="true" signature="1660:1666" ph=" " />
-            <marker date="1572330118642" expanded="true" signature="1792:1798" ph=" " />
-            <marker date="1572330118642" expanded="true" signature="1798:1804" ph=" " />
-            <marker date="1572330118642" expanded="true" signature="1930:1936" ph=" " />
-            <marker date="1572330118642" expanded="true" signature="1936:1942" ph=" " />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
