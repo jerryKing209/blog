@@ -72,8 +72,7 @@ class Comment extends CI_Controller {
 	public function addcomment() {
 		$aid = $this->uri->post('article_id');
 		$comment = $this->input->post('comment');
-		$data
-		['route'] = '/Comment/addcomment/'.$aid; 
+		$data['route'] = '/Comment/addcomment/'.$aid; 
 		if (empty($comment)) {
 			$data['msg'] = '不能发表空评论';
 			goto END;
