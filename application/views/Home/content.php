@@ -89,14 +89,14 @@
                 success: function (result) {
                     console.log(result);//打印服务端返回的数据(调试用)
                     result = JSON.stringify(result);
-                    if (result.status == 200) {
-                        alert(result.msg);
+                    alert(result.msg);
+                    if (result.status == true) {
+                        
                     }
                     ;
                 },
-                error : function(result) {
-                    console.log(result);//打印服务端返回的数据(调试用)
-                    alert(result.msg);
+                error : function() {
+                    alert('网络异常，请重试');
                 }
             });
         }
