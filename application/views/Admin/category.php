@@ -1,4 +1,4 @@
-﻿<!-- 文件名：分类栏目页 时间：2017年8月 作者：HXC -->
+<!-- 文件名：分类栏目页 时间：2017年8月 作者：HXC -->
 <div class="cate_box">
   <div class="layui-tab layui-tab-card admin_bg">
     <ul class="layui-tab-title">

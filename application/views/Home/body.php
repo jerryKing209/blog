@@ -1,4 +1,4 @@
-﻿<!-- 文件名：首页body视图 时间：2017年8月 作者：HXC -->
+<!-- 文件名：首页body视图 时间：2017年8月 作者：HXC -->
 <!--首页banner开始-->
 <div class="banner" style="margin-top:40px;" ">
 	<div class="banner_text">人生苦短，Just for fun !</div>

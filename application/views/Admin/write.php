@@ -1,4 +1,4 @@
-﻿<div style="width:70%;display: inline-block;margin: 5px;margin-top:35px;  position: absolute;">
+<div style="width:70%;display: inline-block;margin: 5px;margin-top:35px;  position: absolute;">
 <div class="layui-tab layui-tab-card" style="background: #fff;">
   <ul class="layui-tab-title">
     <li class="layui-this">添加文章</li>

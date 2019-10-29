@@ -1,4 +1,4 @@
-﻿<!-- 文章列表页 时间：20170726 作者:HXC -->
+<!-- 文章列表页 时间：20170726 作者:HXC -->
 <div class="art_list">
 <div class="layui-tab layui-tab-card admin_bg">
   <ul class="layui-tab-title">

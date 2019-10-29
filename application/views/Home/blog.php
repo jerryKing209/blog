@@ -1,4 +1,4 @@
-﻿<div class="banner blog_banner">
+<div class="banner blog_banner">
 	<div class="banner_text blog_banner_text" style="">不会写文章的程序员不是好设计师!</div>
 </div>
 <!--栏目页banner结束-->

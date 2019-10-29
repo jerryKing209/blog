@@ -1,4 +1,4 @@
-﻿<!--管理员帐号修改页面 时间：20170812 作者：HXC -->
+<!--管理员帐号修改页面 时间：20170812 作者：HXC -->
 <div class="pass_box">
 <div class="layui-tab layui-tab-card admin_bg">
   <ul class="layui-tab-title">
