@@ -30,7 +30,7 @@
         <li class="layui-nav-item layui-this"><a href="<?php echo site_url('Home/index')?>">首页</a></li>
         <!--其他栏目开始-->
         <?php foreach($category as $val){
-            $segments = array('Home','block',$val['cid']);
+            $segments = array('Home','block',$userinfo['uid'],$val['cid']);
             $url = site_url($segments);
             echo ' <li class="layui-nav-item"><a href='."{$url}".'>'."{$val['catename']}".'</a></li>';
         }?>
