@@ -6,20 +6,19 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ini_set('date.timezone','Asia/Shanghai');//时区设置
 class Home extends CI_Controller{
-	
+	private $_is_login = 0;
 	public function __construct() {
 		parent::__construct();
 		$this->load->helper('url');
 		$this->load->model(array('Home_model','Login_model'));
-        $data['is_login'] = 0;
         if($this->Login_model->is_logged_in()) {
-            $data['is_login'] = 1;
+            $this->_is_login = 1;
         }
 	}
 	
 /*前台文章分页*/
 	public function index() {
-
+        $data['is_login'] = $this->_is_login;
 		//获取分类信息
 		$data['category'] = $this->Home_model->getcategory();    //获取栏目并显示 
 		//获取排名信息
@@ -62,6 +61,7 @@ class Home extends CI_Controller{
 
     /*前台文章分页*/
     public function home() {
+        $data['is_login'] = $this->_is_login;
         $uid = $this->uri->segment(3);
         //获取用户信息
         $data['userinfo'] = $this->Home_model->getuserinfo($uid);
@@ -108,6 +108,7 @@ class Home extends CI_Controller{
 
 /*博客分类栏目分页配置*/
 	public function block() {
+        $data['is_login'] = $this->_is_login;
         $uid = $this->uri->segment(3);
 		//获取用户信息
 		$data['userinfo'] = $this->Home_model->getuserinfo($uid);
@@ -158,7 +159,8 @@ class Home extends CI_Controller{
 
 /*文章内容*/
 	public function content() {
-		//获取用户信息
+        $data['is_login'] = $this->_is_login;
+        //获取用户信息
 		//$data['userinfo'] = $this->Home_model->getuserinfo();
 		//获取分类信息
 		$data['category'] = $this->Home_model->getcategory();                                       
@@ -190,4 +192,4 @@ class Home extends CI_Controller{
 	
 }
 
-?>
+
