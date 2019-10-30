@@ -193,7 +193,7 @@ class Admin extends CI_Controller{
         } else {
             $data['tips'] = "删除失败!";
         }
-        $data['route'] = site_url('Article/index');
+        $data['route'] = site_url('Admin/comment');
         //输出信息并跳转
         $this->load->view('tips',$data);
     }
