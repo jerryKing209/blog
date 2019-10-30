@@ -69,10 +69,11 @@ class Home extends CI_Controller{
         $this->load->library('pagination');   //分页显示文章列表
         //配置分页类
         $perPage = 4;
-        $config['base_url'] = site_url('Home/index');//分页所在控制器
+        $url = 'Home/home/'."{$uid}";
+        $config['base_url'] = site_url($url);//分页所在控制器
         $config['total_rows'] = $this->db->count_all_results('article');//需要做分页的总行数
         $config['per_page'] = $perPage;//希望展现的分页数量
-        $config['uri_segment'] = 3;
+        $config['uri_segment'] = 4;
         $config['first_link'] = '首页';
         $config['last_link'] = '尾页';
         $config['prev_link'] = '上一页';
@@ -93,7 +94,7 @@ class Home extends CI_Controller{
         //生成分页
         $data['links'] = $this->pagination->create_links();
         //获取数据
-        $offset = $this->uri->segment(3);
+        $offset = $this->uri->segment(4);
         $data['article']=$this->Home_model->getarticle($perPage, $offset);
         //加载视图
         $this->load->view('Home/header',$data);
@@ -103,25 +104,26 @@ class Home extends CI_Controller{
 
 /*博客分类栏目分页配置*/
 	public function block() {
+        $uid = $this->uri->segment(3);
 		//获取用户信息
-		$data['userinfo'] = $this->Home_model->getuserinfo();
+		$data['userinfo'] = $this->Home_model->getuserinfo($uid);
 		//获取分类信息
 		$data['category'] = $this->Home_model->getcategory();                                       //获取栏目并显示 
 		//获取排名信息
 		$data['order'] = $this->Home_model->getorderart();
 		//获取分类id
-		$cid = $this->uri->segment(3);
+		$cid = $this->uri->segment(4);
 		$this->db->where('cid',$cid);
 		$total = $this->db->count_all_results('article');
 		//加载分页类
 		$this->load->library('pagination');                                                 //分页显示文章列表
 		//配置分页类
 		$perPage = 4;
-		$url = 'Home/block/'."{$cid}";
+		$url = 'Home/block/'."{$uid}"."/"."{$cid}";
 		$config['base_url'] = site_url($url);
 		$config['total_rows'] = $total;
 		$config['per_page'] = $perPage;
-		$config['uri_segment'] = 4;
+		$config['uri_segment'] = 5;
 		$config['first_link'] = '首页';
 		$config['last_link'] = '尾页';
 		$config['prev_link'] = '上一页';
@@ -142,7 +144,7 @@ class Home extends CI_Controller{
 		//生成分页
 		$data['links'] = $this->pagination->create_links();
 		//获取数据
-		$offset = $this->uri->segment(4);
+		$offset = $this->uri->segment(5);
 		$data['article']=$this->Home_model->getarticle($perPage, $offset,$cid);
 		//加载视图
 		$this->load->view('Home/header',$data);
@@ -153,7 +155,7 @@ class Home extends CI_Controller{
 /*文章内容*/
 	public function content() {
 		//获取用户信息
-		$data['userinfo'] = $this->Home_model->getuserinfo(); 
+		//$data['userinfo'] = $this->Home_model->getuserinfo();
 		//获取分类信息
 		$data['category'] = $this->Home_model->getcategory();                                       
 		//获取排名信息
