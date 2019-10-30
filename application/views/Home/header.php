@@ -36,10 +36,13 @@
                 echo ' <li class="layui-nav-item"><a href='."{$url}".'>'."{$val['catename']}".'</a></li>';
 
             }}?>
-
+    <?php if ($is_login == 0) {?>
         <li id="nav_bar_li2" ><a href="<?php echo site_url('Login/index')?>">登录</a></li>
+        <li id="nav_bar_li2" ><a href="<?php echo site_url('Login/register')?>">注册</a></li>
+        <?php } else {?>
         <!-- <li id="nav_bar_li3" ><img class="img-circle" src = "<?php echo base_url();?><?php echo $userinfo['photo']?>"></li> -->
         <!--其他栏目结束-->
+    <?php }?>
     </ul>
 </div>
 <!--pc导航条结束-->

@@ -10,7 +10,11 @@ class Home extends CI_Controller{
 	public function __construct() {
 		parent::__construct();
 		$this->load->helper('url');
-		$this->load->model('Home_model');
+		$this->load->model(array('Home_model','Login_model'));
+        $data['is_login'] = 0;
+        if($this->Login_model->is_logged_in()) {
+            $data['is_login'] = 1;
+        }
 	}
 	
 /*前台文章分页*/
