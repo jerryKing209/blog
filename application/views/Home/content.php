@@ -1,4 +1,4 @@
-<div class="container">
+﻿<div class="container">
     <div class="row">
         <div class="col-md-12" style="margin-top: 60px;" >
             <div class="box_style">
@@ -59,7 +59,7 @@
             <?php } else {?>
                 <?php foreach($comments as $comment){ ?>
                     <?php if (empty($comment)) continue; ?>
-                    <div class="media">
+                    <div class="media" style="margin-bottom: 10px;">
                         <a href="#" class="pull-left">
                             <img src="<?php if(empty($comment['head_img'])) {echo 'https://www.runoob.com/try/bootstrap/layoutit/v3/default8.jpg';} else { echo $comment['head_img'];}?>" class="media-object" alt="">
                         </a>
