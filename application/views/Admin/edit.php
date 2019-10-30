@@ -24,10 +24,10 @@
 					<div class="col-sm-4">
 						<input type="text" class="form-control" id="exampleInputTitle" name = "title" value = "<?php echo $article['title']; ?>">
 					</div>
-					<label for="exampleInputAuthor" class="control-label col-sm-2">文章作者：</label>
-					<div class="col-sm-4">
-						<input type="text" class="form-control" id="exampleInputAuthor" name = "author" value = "<?php echo $article['author']; ?>">
-					</div>
+<!--					<label for="exampleInputAuthor" class="control-label col-sm-2">文章作者：</label>-->
+<!--					<div class="col-sm-4">-->
+<!--						<input type="text" class="form-control" id="exampleInputAuthor" name = "author" value = "--><?php //echo $article['author']; ?><!--">-->
+<!--					</div>-->
 					
 				</div>
 				<div class="form-group">
