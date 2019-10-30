@@ -30,10 +30,13 @@
         <li class="layui-nav-item layui-this"><a href="<?php echo site_url('Home/index')?>">首页</a></li>
         <!--其他栏目开始-->
         <?php foreach($category as $val){
-            $segments = array('Home','block',$userinfo['uid'],$val['cid']);
-            $url = site_url($segments);
-            echo ' <li class="layui-nav-item"><a href='."{$url}".'>'."{$val['catename']}".'</a></li>';
-        }?>
+            if (!empty($userinfo)) {
+                $segments = array('Home','block',$userinfo['uid'],$val['cid']);
+                $url = site_url($segments);
+                echo ' <li class="layui-nav-item"><a href='."{$url}".'>'."{$val['catename']}".'</a></li>';
+
+            }?>
+           
         <li id="nav_bar_li2" ><a href="<?php echo site_url('Login/index')?>">登录</a></li>
         <!-- <li id="nav_bar_li3" ><img class="img-circle" src = "<?php echo base_url();?><?php echo $userinfo['photo']?>"></li> -->
         <!--其他栏目结束-->
