@@ -163,12 +163,12 @@ class Home extends CI_Controller{
         //获取用户信息
 		//$data['userinfo'] = $this->Home_model->getuserinfo();
 		//获取分类信息
-		$data['category'] = $this->Home_model->getcategory();                                       
-		//获取排名信息
-		$data['order'] = $this->Home_model->getorderart();
+		$data['category'] = $this->Home_model->getcategory();
 		//获取文章具体内容
 		$aid = $this->uri->segment(3);
 		$data['content'] = $this->Home_model->getcontent($aid);
+        //获取排名信息
+        $data['order'] = $this->Home_model->getorderart($data['content']['author_id']);
 		$data['comments'] = $this->Home_model->get_article_comment($aid);
 
 		//加载视图	
