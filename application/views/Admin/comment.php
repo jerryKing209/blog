@@ -1,4 +1,3 @@
-<!-- 文章列表页 时间：20170726 作者:HXC -->
 <div class="art_list">
 <div class="layui-tab layui-tab-card admin_bg">
   <ul class="layui-tab-title">
@@ -18,7 +17,7 @@
 					<col width="80">
 					<col width="200">
 					<col width="180">
-					<col width="60">
+					<col width="80">
 				</colgroup>
 				<thead>
 				<tr>
@@ -28,7 +27,7 @@
 				  <th>作者</th>
 				  <th>文章标题</th>
 				  <th>创建时间</th>
-				  <th>操作选项</th>
+				  <th>操作</th>
 				</tr> 
 				</thead>
 
