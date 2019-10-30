@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="240bb16f-9db4-40e2-b8c1-543186706a30" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/Admin/comment.php" afterPath="$PROJECT_DIR$/application/views/Admin/comment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Comment_model.php" afterPath="$PROJECT_DIR$/application/models/Comment_model.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,7 +52,7 @@
       <file leaf-file-name="Comment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Comment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
+            <state relative-caret-position="302">
               <caret line="35" column="53" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="53" />
               <folding />
             </state>
@@ -62,8 +62,8 @@
       <file leaf-file-name="Admin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="177" column="68" lean-forward="false" selection-start-line="177" selection-start-column="50" selection-end-line="177" selection-end-column="68" />
+            <state relative-caret-position="559">
+              <caret line="178" column="87" lean-forward="true" selection-start-line="178" selection-start-column="8" selection-end-line="178" selection-end-column="87" />
               <folding>
                 <marker date="1572414477027" expanded="true" signature="4888:4894" ph=" " />
                 <marker date="1572414477027" expanded="true" signature="4894:4900" ph=" " />
@@ -137,11 +137,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comment_model.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Comment_model.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/Comment_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="49" column="41" lean-forward="false" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+            <state relative-caret-position="327">
+              <caret line="39" column="56" lean-forward="false" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -157,12 +157,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="comment.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="comment.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/Admin/comment.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="43" column="53" lean-forward="false" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
-              <folding />
+            <state relative-caret-position="566">
+              <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -201,8 +203,8 @@
         <option value="$PROJECT_DIR$/application/views/Admin/article.php" />
         <option value="$PROJECT_DIR$/application/views/Admin/write.php" />
         <option value="$PROJECT_DIR$/application/controllers/Article.php" />
-        <option value="$PROJECT_DIR$/application/models/Comment_model.php" />
         <option value="$PROJECT_DIR$/application/views/Admin/comment.php" />
+        <option value="$PROJECT_DIR$/application/models/Comment_model.php" />
       </list>
     </option>
   </component>
@@ -519,7 +521,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12851000" />
+    <option name="totallyTimeSpent" value="13128000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -947,26 +949,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Comment.php">
+    <entry file="file://$PROJECT_DIR$/application/views/Admin/edit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="35" column="53" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="53" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Comment_model.php">
+    <entry file="file://$PROJECT_DIR$/application/views/Admin/comment.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="49" column="41" lean-forward="false" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
+        <state relative-caret-position="566">
+          <caret line="54" column="21" lean-forward="true" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/controllers/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="35" column="53" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="177" column="68" lean-forward="false" selection-start-line="177" selection-start-column="50" selection-end-line="177" selection-end-column="68" />
+        <state relative-caret-position="559">
+          <caret line="178" column="87" lean-forward="true" selection-start-line="178" selection-start-column="8" selection-end-line="178" selection-end-column="87" />
           <folding>
             <marker date="1572414477027" expanded="true" signature="4888:4894" ph=" " />
             <marker date="1572414477027" expanded="true" signature="4894:4900" ph=" " />
@@ -984,18 +996,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/Admin/edit.php">
+    <entry file="file://$PROJECT_DIR$/application/models/Comment_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/Admin/comment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="43" column="53" lean-forward="false" selection-start-line="43" selection-start-column="53" selection-end-line="43" selection-end-column="53" />
+        <state relative-caret-position="327">
+          <caret line="39" column="56" lean-forward="false" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
           <folding />
         </state>
       </provider>
