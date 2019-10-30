@@ -1,4 +1,4 @@
-<div class="banner" style="margin-top:40px;" ">
+<div class="banner" style="">
 	<div class="banner_text">人生苦短，Just for fun !</div>
 </div>
 <!--首页banner结束-->
