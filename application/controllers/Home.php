@@ -110,7 +110,7 @@ class Home extends CI_Controller{
 		//获取分类信息
 		$data['category'] = $this->Home_model->getcategory();                                       //获取栏目并显示 
 		//获取排名信息
-		$data['order'] = $this->Home_model->getorderart();
+		$data['order'] = $this->Home_model->getorderart($uid);
 		//获取分类id
 		$cid = $this->uri->segment(4);
 		$this->db->where('cid',$cid);
