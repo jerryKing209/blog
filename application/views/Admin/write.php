@@ -22,10 +22,10 @@
 			<div class="col-sm-4">
 				<input type="text" class="form-control" id="exampleInputTitle" name = "title">
 			</div>
-			<label for="exampleInputAuthor" class="control-label col-sm-2">文章作者：</label>
-			<div class="col-sm-4">
-				<input type="text" class="form-control" id="exampleInputAuthor" name = "author">
-			</div>
+<!--			<label for="exampleInputAuthor" class="control-label col-sm-2">文章作者：</label>-->
+<!--			<div class="col-sm-4">-->
+<!--				<input type="text" class="form-control" id="exampleInputAuthor" name = "author">-->
+<!--			</div>-->
 			
 		</div>
 		<div class="form-group">
