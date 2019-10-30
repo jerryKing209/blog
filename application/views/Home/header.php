@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -42,6 +42,7 @@
         <?php } else {?>
         <!-- <li id="nav_bar_li3" ><img class="img-circle" src = "<?php echo base_url();?><?php echo $userinfo['photo']?>"></li> -->
         <!--其他栏目结束-->
+        <li id="nav_bar_li2" ><a href="<?php echo site_url('Login/logout')?>">注销登录</a></li>
     <?php }?>
     </ul>
 </div>

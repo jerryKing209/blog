@@ -1,5 +1,4 @@
-﻿<!-- *文件名：后台文章模块 *时间：20170809 -->
-<?php
+﻿<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ini_set('date.timezone','Asia/Shanghai');//时区设置
 class Admin extends CI_Controller{

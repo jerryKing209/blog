@@ -1,7 +1,3 @@
-<!--
-*文件名：前台
-*时间：20170715
--->
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ini_set('date.timezone','Asia/Shanghai');//时区设置
@@ -52,7 +48,7 @@ class Home extends CI_Controller{
 		$data['links'] = $this->pagination->create_links();
 		//获取数据
 		$offset = $this->uri->segment(3);
-		$data['article']=$this->Home_model->getarticle($perPage, $offset);
+		$data['article']=$this->Article_model->get_article($perPage, $offset);
 		//加载视图	
 		$this->load->view('Home/header',$data);
 		$this->load->view('Home/body');
@@ -99,7 +95,7 @@ class Home extends CI_Controller{
         $data['links'] = $this->pagination->create_links();
         //获取数据
         $offset = $this->uri->segment(4);
-        $data['article']=$this->Home_model->getarticle($perPage, $offset, 0,$uid);
+        $data['article']=$this->Article_model->get_article($perPage, $offset, 0,$uid);
         //加载视图
         $this->load->view('Home/header',$data);
         $this->load->view('Home/home');
@@ -150,7 +146,7 @@ class Home extends CI_Controller{
 		$data['links'] = $this->pagination->create_links();
 		//获取数据
 		$offset = $this->uri->segment(5);
-		$data['article']=$this->Home_model->getarticle($perPage, $offset,$cid,$uid);
+		$data['article']=$this->Article_model->get_article($perPage, $offset,$cid,$uid);
 		//加载视图
 		$this->load->view('Home/header',$data);
 		$this->load->view('Home/blog');

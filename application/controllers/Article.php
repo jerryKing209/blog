@@ -1,9 +1,3 @@
-<!--
-*文件名：后台文章模块
-*时间：20170815
-*作者：HXC
--->
-
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ini_set('date.timezone','Asia/Shanghai');//时区设置
@@ -19,7 +13,8 @@ class Article extends CI_Controller {
 	}
 
 /*后台文章列表页分页*/
-	public function index() {	
+	public function index() {
+	    $uid = $this->Login_model->get_user_id();
 		//加载分页类
 		$this->load->library('pagination');                                              
 		//配置分页类
@@ -49,7 +44,7 @@ class Article extends CI_Controller {
 		$data['links'] = $this->pagination->create_links();
 		//获取数据
 		$offset = $this->uri->segment(3);
-		$article = $this->Article_model->get_article($perPage, $offset);
+		$article = $this->Article_model->get_article($perPage, $offset,0,$uid);
 		//获取分类
 		$category = $this->Article_model->get_category();
 		//将分类id替换为分类名

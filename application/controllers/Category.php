@@ -1,10 +1,4 @@
-<?php
-/*
-*文件名：栏目分类控制器
-*时间：2017年7月
-*作者：HXC
-*/
-
+﻿<?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ini_set('date.timezone','Asia/Shanghai');//时区设置
 class Category extends CI_Controller {

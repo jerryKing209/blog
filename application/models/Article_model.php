@@ -1,25 +1,47 @@
-<?php
+﻿<?php
 class Article_model extends CI_Model{
 	
 	function __construct(){
 		parent::__construct();
 	}
 
-/*获取文章列表*/
-	function get_article($perPage,$offset,$cid = 0){
-		$table = "article";
-		if($cid == 0){
-			$this->db->order_by('id','DESC');//降序排序，id越大最新发布的在前
-			$query = $this->db->get($table,$perPage,$offset);
-			$result = $query->result_array();
-			return $result;
-		}else{
-			$this->db->order_by('id','DESC');//降序排序，id越大最新发布的在前
-			$query = $this->db->get_where($table,array("cid"=>$cid),$perPage,$offset);
-			$result = $query->result_array();
-			return $result;
-		}		
-	}
+    /*获取首页 和列表文章列表*/
+    function get_article($perPage,$offset,$cid = 0,$uid=0){
+        $table = "article";
+        if($cid == 0 && $uid > 0){
+            //首页
+            $this->db->where('author_id', $uid);
+            $this->db->order_by('id','DESC');//降序排序，id越大最新发布的在前
+            $query = $this->db->get($table,$perPage,$offset);
+            $result = $query->result_array();
+        }else if ($cid > 0 && $cid > 0){
+            //列表页
+            $this->db->order_by('id','DESC');//降序排序，id越大最新发布的在前
+            $query = $this->db->get_where($table,array("cid"=>$cid,"author_id" => $uid),$perPage,$offset);
+            $result = $query->result_array();
+        } else {
+            $this->db->order_by('id','DESC');//降序排序，id越大最新发布的在前
+            $query = $this->db->get($table,$perPage,$offset);
+            $result = $query->result_array();
+        }
+        return $result;
+    }
+
+///*获取文章列表*/
+//	function get_article($perPage,$offset,$cid = 0,$uid=0){
+//		$table = "article";
+//		if($cid == 0){
+//			$this->db->order_by('id','DESC');//降序排序，id越大最新发布的在前
+//			$query = $this->db->get($table,$perPage,$offset);
+//			$result = $query->result_array();
+//			return $result;
+//		}else{
+//			$this->db->order_by('id','DESC');//降序排序，id越大最新发布的在前
+//			$query = $this->db->get_where($table,array("cid"=>$cid),$perPage,$offset);
+//			$result = $query->result_array();
+//			return $result;
+//		}
+//	}
 
 /*获取文章*/
 	function get_art_info($aid){
