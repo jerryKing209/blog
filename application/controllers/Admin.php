@@ -182,9 +182,20 @@ class Admin extends CI_Controller{
         $this->load->view('Admin/comment');
         $this->load->view('Admin/footer');
     }
-    
-    public function delcomment() {
 
+    /*删除评论*/
+    public function delcomment() {
+        //获取文章id和分类信息
+        $aid = $this->uri->segment(3);
+        //执行删除操作
+        if($this->Comment_model->del_comment($aid)){
+            $data['tips'] = "删除成功!";
+        } else {
+            $data['tips'] = "删除失败!";
+        }
+        $data['route'] = site_url('Article/index');
+        //输出信息并跳转
+        $this->load->view('tips',$data);
     }
 	
 }
