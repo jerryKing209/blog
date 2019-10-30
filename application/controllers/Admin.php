@@ -147,7 +147,7 @@ class Admin extends CI_Controller{
         //加载分页类
         $this->load->library('pagination');
         //配置分页类
-        $perPage = 12;//分页数量
+        $perPage = 10;//分页数量
         $config['base_url'] = site_url('Admin/comment');//分页所在模板
         $config['total_rows'] = $this->Comment_model->getcommentnum($uid);//需要处理分页数据的总量
         $config['per_page'] = $perPage;//每页展现的数量
