@@ -173,7 +173,7 @@ class Admin extends CI_Controller{
         $data['links'] = $this->pagination->create_links();
         //获取数据
         $offset = $this->uri->segment(3);
-        $offset = $offset < 1 ? 1 : $offset;
+        $offset = (int)$offset;
        // $comments = $this->Comment_model->get_comments($perPage, $offset);
         //加载修改密码视图
         $data['comments'] = $this->Comment_model->get_admin_comments($perPage, $offset,$uid);

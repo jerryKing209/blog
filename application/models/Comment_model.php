@@ -41,7 +41,7 @@ class Comment_model extends CI_Model{
     }
 
     /*获取后台评论列表*/
-    function get_admin_comments($perPage = 12,$offset = 1,$uid = 0){
+    function get_admin_comments($perPage = 12,$offset = 0,$uid = 0){
         $offset = ($offset < 1) ? 1 : $offset;
         $this->db->select('comment.*, article.title,user.username,user.head_img');
         $this->db->from('comment');
@@ -49,7 +49,7 @@ class Comment_model extends CI_Model{
         $this->db->join('user', 'comment.user_id = user.uid');
         $this->db->where('article.author_id', $uid);
         $this->db->order_by('comment.id', 'DESC');
-        $this->db->limit($perPage, ($offset-1) * $perPage);
+        $this->db->limit($perPage, $offset);
         $query = $this->db->get();
         $result = $query->result_array();
         return $result;
