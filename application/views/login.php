@@ -1,10 +1,3 @@
-<!--
-文件名：后台登录界面
-时间：20170816
-作者：HXC
--->
-
-
 <!-- 文档类型声明 -->
 <!DOCTYPE html> 
 <!-- 文档使用中文 -->                 
@@ -38,7 +31,7 @@ background: #eee;
 <body>
 
 <div class="login_box">
-  <div class="login_title">后台登录</div>
+  <div class="login_title">用户登录</div>
     <form class="layui-form layui-form-pane" method="post" action = "/login/check">
       <div class="layui-form-item">
       <h4 class="text-danger"><?php echo $login_error; ?></h4>
