@@ -22,8 +22,9 @@ class Home_model extends CI_Model{
 	}
 	
 	/*热门文章浏览量排序*/
-	function getorderart(){
+	function getorderart($uid){
 		$table = "article";
+        $this->db->where('author_id', $uid);
 		$this->db->order_by('id','ASC');
 		$this->db->limit(8);//限制查询结果的返回数量
 		$query = $this->db->get($table);

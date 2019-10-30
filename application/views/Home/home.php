@@ -17,6 +17,9 @@
 				<div class="index_left_list index_left_list2" >
 					热门文章
 				</div>
+                <?php if (empty($order)) { ?>
+                    <div class="index_left_list" >博主暂时什么都没有留下</div>
+                <?php } else {?>
 				<?php $var = 1; foreach($order as $val){ 
 					$segments = array('Home','content',$val['id']);
 					$url = site_url($segments);
@@ -25,7 +28,7 @@
 				<div class="index_left_list" >
 				<?php echo $var++;?>、<?php echo $val['title'];?>
 				</div></a>
-				<?php }?>
+				<?php }}?>
 			<!--热门文章结束-->
 		</div>
 
