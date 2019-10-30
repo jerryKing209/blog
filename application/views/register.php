@@ -87,6 +87,6 @@ background: #eee;
     <!-- 2.加载jQuery库，同时加载该库必须在加载bootstrap.min.js之前 -->
     <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
     <!-- 3.加载bootstrap的核心js库 -->
-    <script src="/public/js/bootstrap.min.js"></script>
+    <script src="/public/theme/bootstrap/js/bootstrap.min.js"></script>
   </body>
 </html>
