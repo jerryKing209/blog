@@ -1,4 +1,4 @@
-<div class="banner blog_banner">
+﻿<div class="banner blog_banner">
 	<div class="banner_text blog_banner_text" style="">不会写文章的程序员不是好设计师!</div>
 </div>
 <!--栏目页banner结束-->
@@ -12,20 +12,25 @@
 
 	<!--左侧-->
 	<div class="col-md-4">
-		<div class="hot_art">
-			<!--热门文章开始-->
-				<div class="index_left_list index_left_list2" >热门文章</div>
-				<?php $var = 1; foreach($order as $val){
-					$segments = array('Home','content',$val['id']);
-					$url = site_url($segments);
-				?>
-				<a style="text-decoration: none" href = "<?php echo $url;?>">
-				<div class="index_left_list" >
-				<?php echo $var++;?>、<?php echo $val['title'];?>
-				</div></a>
-				<?php }?>
-			<!--热门文章结束-->
-		</div>
+        <div class="hot_art" >
+            <!--热门文章开始-->
+            <div class="index_left_list index_left_list2" >
+                热门文章
+            </div>
+            <?php if (empty($order)) { ?>
+                <div class="index_left_list" >博主暂时什么都没有留下</div>
+            <?php } else {?>
+                <?php $var = 1; foreach($order as $val){
+                    $segments = array('Home','content',$val['id']);
+                    $url = site_url($segments);
+                    ?>
+                    <a style="text-decoration: none" href = "<?php echo $url;?>">
+                        <div class="index_left_list" >
+                            <?php echo $var++;?>、<?php echo $val['title'];?>
+                        </div></a>
+                <?php }}?>
+            <!--热门文章结束-->
+        </div>
 
 		<div class="fir_link left_hide" >
 			<!--友情链接开始-->
