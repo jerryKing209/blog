@@ -13,7 +13,7 @@
 				<colgroup>
 					<col width="50">
                     <col width="50">
-					<col width="300">
+					<col width="380">
 					<col width="80">
 					<col width="200">
 					<col width="180">
