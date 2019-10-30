@@ -39,6 +39,7 @@ background: #eee;
           <div class="layui-input-inline">
             <input type="text" name="username" id="username" lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input" value = "<?php echo set_value('username');?>">
           </div>
+          <?php echo form_error('username','<p class="help-inline text-danger">','</p>');?>
       </div>
       <!--密码-->
       <div class="layui-form-item">
@@ -46,7 +47,6 @@ background: #eee;
           <div class="layui-input-inline">
             <input type="password" name="password" id="password" lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input" value = "<?php echo set_value('password');?>">
           </div>
-          <?php echo form_error('password','<p class="help-inline text-danger">','</p>');?>
       </div>
 
       <!--验证码-->
@@ -79,6 +79,6 @@ background: #eee;
     <!-- 2.加载jQuery库，同时加载该库必须在加载bootstrap.min.js之前 -->
     <script src="http://cdn.bootcss.com/jquery/1.10.2/jquery.min.js"></script>
     <!-- 3.加载bootstrap的核心js库 -->
-    <script src="/public/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>

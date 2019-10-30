@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="87f87535-34cb-4f6d-b2cf-f7f25e52639b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Login.php" afterPath="$PROJECT_DIR$/application/controllers/Login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/login.php" afterPath="$PROJECT_DIR$/application/views/login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/register.php" afterPath="$PROJECT_DIR$/application/views/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/theme/css/admin.css" afterPath="$PROJECT_DIR$/public/theme/css/admin.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -55,16 +54,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/Home/home.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1486">
-              <caret line="1" column="44" lean-forward="false" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="content.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/Home/content.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -105,8 +94,8 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/views/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="21" />
+            <state relative-caret-position="244">
+              <caret line="48" column="91" lean-forward="false" selection-start-line="48" selection-start-column="91" selection-end-line="48" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -115,18 +104,28 @@
       <file leaf-file-name="Login.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/controllers/Login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
+            <state relative-caret-position="178">
               <caret line="79" column="92" lean-forward="false" selection-start-line="79" selection-start-column="92" selection-end-line="79" selection-end-column="92" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="admin.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/theme/css/admin.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
+            <state relative-caret-position="616">
               <caret line="163" column="12" lean-forward="false" selection-start-line="163" selection-start-column="12" selection-end-line="163" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/views/login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="41" column="41" lean-forward="false" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -170,7 +169,6 @@
         <option value="$PROJECT_DIR$/application/config/config.php" />
         <option value="$PROJECT_DIR$/application/views/Admin/article.php" />
         <option value="$PROJECT_DIR$/application/models/Comment_model.php" />
-        <option value="$PROJECT_DIR$/application/views/login.php" />
         <option value="$PROJECT_DIR$/application/views/Admin/edit.php" />
         <option value="$PROJECT_DIR$/application/views/Admin/write.php" />
         <option value="$PROJECT_DIR$/application/views/Admin/comment.php" />
@@ -186,8 +184,9 @@
         <option value="$PROJECT_DIR$/application/models/Home_model.php" />
         <option value="$PROJECT_DIR$/application/views/Home/content.php" />
         <option value="$PROJECT_DIR$/application/controllers/Login.php" />
-        <option value="$PROJECT_DIR$/application/views/register.php" />
         <option value="$PROJECT_DIR$/public/theme/css/admin.css" />
+        <option value="$PROJECT_DIR$/application/views/register.php" />
+        <option value="$PROJECT_DIR$/application/views/login.php" />
       </list>
     </option>
   </component>
@@ -256,6 +255,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blog" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="theme" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -505,7 +522,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22672000" />
+    <option name="totallyTimeSpent" value="23047000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
@@ -739,14 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="60" column="68" lean-forward="false" selection-start-line="60" selection-start-column="63" selection-end-line="60" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/views/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-655">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1017,26 +1026,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/controllers/Login.php">
+    <entry file="file://$PROJECT_DIR$/public/theme/css/admin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="79" column="92" lean-forward="false" selection-start-line="79" selection-start-column="92" selection-end-line="79" selection-end-column="92" />
+        <state relative-caret-position="616">
+          <caret line="163" column="12" lean-forward="false" selection-start-line="163" selection-start-column="12" selection-end-line="163" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/views/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="39" column="21" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="21" />
+        <state relative-caret-position="244">
+          <caret line="48" column="91" lean-forward="false" selection-start-line="48" selection-start-column="91" selection-end-line="48" selection-end-column="91" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/theme/css/admin.css">
+    <entry file="file://$PROJECT_DIR$/application/controllers/Login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="163" column="12" lean-forward="false" selection-start-line="163" selection-start-column="12" selection-end-line="163" selection-end-column="12" />
+        <state relative-caret-position="178">
+          <caret line="79" column="92" lean-forward="false" selection-start-line="79" selection-start-column="92" selection-end-line="79" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/views/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="41" column="41" lean-forward="false" selection-start-line="41" selection-start-column="41" selection-end-line="41" selection-end-column="41" />
           <folding />
         </state>
       </provider>
