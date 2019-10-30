@@ -83,14 +83,17 @@ class Article extends CI_Controller {
 		//获取文章信息
 		$category = $this->input->post('category');
 		$title = $this->input->post('title');
-		$author = $this->input->post('author');
+//		$author = $this->input->post('author');
+        $author = $this->Login_model->get_user_info();
+        $username = $author['username'] ?? '';
 		$description = $this->input->post('description');
 		$content = $this->input->post('content');
         $authorid = $this->Login_model->get_user_id();
         $createtime = time();
 		$info = array(
             "cid"=>$category,
-            "title"=>$title,"author"=>$author,
+            "title"=>$title,
+            "author"=>$username,
             "description"=>$description,
             "content"=>$content,
             "createtime"=>$createtime,
