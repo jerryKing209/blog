@@ -176,6 +176,7 @@ class Admin extends CI_Controller{
        // $comments = $this->Comment_model->get_comments($perPage, $offset);
         //加载修改密码视图
         $data['comments'] = $this->Comment_model->get_admin_comments($perPage, $offset,$uid);
+        log_message('info', "offset:". $offset);
         $this->load->view('Admin/header',$data);
         $this->load->view('Admin/comment');
         $this->load->view('Admin/footer');
