@@ -95,7 +95,7 @@ class Home extends CI_Controller{
         $data['links'] = $this->pagination->create_links();
         //获取数据
         $offset = $this->uri->segment(4);
-        $data['article']=$this->Home_model->getarticle($perPage, $offset);
+        $data['article']=$this->Home_model->getarticle($perPage, $offset, 0,$uid);
         //加载视图
         $this->load->view('Home/header',$data);
         $this->load->view('Home/home');
@@ -145,7 +145,7 @@ class Home extends CI_Controller{
 		$data['links'] = $this->pagination->create_links();
 		//获取数据
 		$offset = $this->uri->segment(5);
-		$data['article']=$this->Home_model->getarticle($perPage, $offset,$cid);
+		$data['article']=$this->Home_model->getarticle($perPage, $offset,$cid,$uid);
 		//加载视图
 		$this->load->view('Home/header',$data);
 		$this->load->view('Home/blog');
