@@ -160,8 +160,7 @@ class Home extends CI_Controller{
 /*文章内容*/
 	public function content() {
         $data['is_login'] = $this->_is_login;
-        //获取用户信息
-		//$data['userinfo'] = $this->Home_model->getuserinfo();
+
 		//获取分类信息
 		$data['category'] = $this->Home_model->getcategory();
 		//获取文章具体内容
@@ -169,6 +168,8 @@ class Home extends CI_Controller{
 		$data['content'] = $this->Home_model->getcontent($aid);
         //获取排名信息
         $data['order'] = $this->Home_model->getorderart($data['content']['author_id']);
+        //获取用户信息
+        $data['userinfo'] = $this->Home_model->getuserinfo($data['content']['author_id']);
 		$data['comments'] = $this->Home_model->get_article_comment($aid);
 
 		//加载视图	
