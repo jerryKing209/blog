@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 文件名：后台登录界面
 时间：20170816
 作者：HXC
@@ -45,6 +45,7 @@ background: #eee;
           <label class="layui-form-label">用户名：</label>
           <div class="layui-input-inline">
             <input type="text" name="username" id="username" lay-verify="required" placeholder="请输入用户名" autocomplete="off" class="layui-input" value = "<?php echo set_value('username');?>">
+              <?php echo form_error('username','<p class="help-inline text-danger">','</p>');?>
           </div>
       </div>
       <!--密码-->
