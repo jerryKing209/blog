@@ -5,9 +5,9 @@ class Home_model extends CI_Model{
 	}
 	
 	/*获取用户信息*/
-	function getuserinfo(){
+	function getuserinfo($uid){
 		$table = "user";
-		$query = $this->db->get_where($table,array('uid'=>1));
+		$query = $this->db->get_where($table,array('uid'=>$uid));
 		$result = $query->row_array();
 		if (isset($result['password'])) unset($result['password']);
 		return $result;
@@ -30,6 +30,18 @@ class Home_model extends CI_Model{
 		$result = $query->result_array();
 		return $result;
 	}
+
+
+    /*热门博主按时间排序*/
+    function getorderblogger(){
+        $this->db->select("uid,username");
+        $table = "user";
+        $this->db->order_by('uid','ASC');
+        $this->db->limit(8);//限制查询结果的返回数量
+        $query = $this->db->get($table);
+        $result = $query->result_array();
+        return $result;
+    }
 
 
 /*获取首页 和列表文章列表*/

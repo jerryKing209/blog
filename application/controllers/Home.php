@@ -15,12 +15,11 @@ class Home extends CI_Controller{
 	
 /*前台文章分页*/
 	public function index() {
-		//获取用户信息
-		$data['userinfo'] = $this->Home_model->getuserinfo(); 
+
 		//获取分类信息
 		$data['category'] = $this->Home_model->getcategory();    //获取栏目并显示 
 		//获取排名信息
-		$data['order'] = $this->Home_model->getorderart();
+		$data['order'] = $this->Home_model->getorderblogger();
 		//加载分页类
 		$this->load->library('pagination');   //分页显示文章列表
 		//配置分页类
@@ -56,6 +55,51 @@ class Home extends CI_Controller{
 		$this->load->view('Home/body');
 		$this->load->view('Home/footer');
 	}
+
+    /*前台文章分页*/
+    public function home() {
+        $uid = $this->uri->segment(3);
+        //获取用户信息
+        $data['userinfo'] = $this->Home_model->getuserinfo($uid);
+        //获取分类信息
+        $data['category'] = $this->Home_model->getcategory();    //获取栏目并显示
+        //获取排名信息
+        $data['order'] = $this->Home_model->getorderart();
+        //加载分页类
+        $this->load->library('pagination');   //分页显示文章列表
+        //配置分页类
+        $perPage = 4;
+        $config['base_url'] = site_url('Home/index');//分页所在控制器
+        $config['total_rows'] = $this->db->count_all_results('article');//需要做分页的总行数
+        $config['per_page'] = $perPage;//希望展现的分页数量
+        $config['uri_segment'] = 3;
+        $config['first_link'] = '首页';
+        $config['last_link'] = '尾页';
+        $config['prev_link'] = '上一页';
+        $config['next_link'] = '下一页';
+        $config['first_tag_open'] = '<span class="layui-btn" role = "button">';//第一个链接的起始标签。
+        $config['first_tag_close'] = '</span>&nbsp;&nbsp;';//第一个链接的结束标签
+        $config['last_tag_open'] = '<span class="layui-btn" role = "button">';//最后一个链接的起始标签
+        $config['last_tag_close'] = '</span>&nbsp;&nbsp;';//最后一个链接的结束标签
+        $config['num_tag_open'] = '<span class="layui-btn layui-btn-primary" role = "button">';//数字链接的起始标签
+        $config['num_tag_close'] = '</span>&nbsp;&nbsp;';
+        $config['cur_tag_open'] = '<span class="layui-btn layui-btn-primary" role = "button">';//当前页链接的起始标签
+        $config['cur_tag_close'] = '</span>&nbsp;&nbsp;';
+        $config['prev_tag_open'] = '<span class="layui-btn" role = "button">';
+        $config['prev_tag_close'] = '</span>&nbsp;&nbsp;';
+        $config['next_tag_open'] = '<span class="layui-btn" role = "button">';
+        $config['next_tag_close'] = '</span>&nbsp;&nbsp;';
+        $this->pagination->initialize($config);
+        //生成分页
+        $data['links'] = $this->pagination->create_links();
+        //获取数据
+        $offset = $this->uri->segment(3);
+        $data['article']=$this->Home_model->getarticle($perPage, $offset);
+        //加载视图
+        $this->load->view('Home/header',$data);
+        $this->load->view('Home/home');
+        $this->load->view('Home/footer');
+    }
 
 /*博客分类栏目分页配置*/
 	public function block() {

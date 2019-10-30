@@ -1,5 +1,3 @@
-<!-- 文件名：首页body视图 时间：2017年8月 作者：HXC -->
-<!--首页banner开始-->
 <div class="banner" style="margin-top:40px;" ">
 	<div class="banner_text">人生苦短，Just for fun !</div>
 </div>
@@ -9,7 +7,7 @@
 <div class="row">
 	<!--所在位置栏-->
 	<div class="col-md-12">
-		<div class="wh_place">博客主页</div>
+		<div class="wh_place">主页</div>
 	</div>
 
 	<!--左侧-->
@@ -17,15 +15,15 @@
 		<div class="hot_art" >
 			<!--热门文章开始-->
 				<div class="index_left_list index_left_list2" >
-					热门文章
+					热门博主
 				</div>
 				<?php $var = 1; foreach($order as $val){ 
-					$segments = array('Home','content',$val['id']);
+					$segments = array('Home','home',$val['uid']);
 					$url = site_url($segments);
 				?>
 				<a style="text-decoration: none" href = "<?php echo $url;?>">
 				<div class="index_left_list" >
-				<?php echo $var++;?>、<?php echo $val['title'];?>
+				<?php echo $var++;?>、<?php echo $val['username'];?>
 				</div></a>
 				<?php }?>
 			<!--热门文章结束-->
@@ -50,20 +48,6 @@
 				<a style="text-decoration: none" href = "http://www.php1.cn/">中国第一PHP社区</a>
 			</div>
 			<!--友情链接结束-->
-		</div>
-
-		<div class="bz_card left_hide">
-			<!--联系方式开始-->
-			<div class="index_left_list2 index_left_list" >
-				博主名片
-			</div>
-			
-			<div style="display: block;">			
-				<p >博主：<?php echo $userinfo['username'];?></p>
-				<p >语录：<?php echo $userinfo['location'];?></p>
-				<p >邮箱：<?php echo $userinfo['email']?></p>	
-			</div>
-			<!--联系方式结束-->
 		</div>
 
 	</div>
