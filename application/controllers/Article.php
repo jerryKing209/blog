@@ -87,14 +87,15 @@ class Article extends CI_Controller {
 		$description = $this->input->post('description');
 		$content = $this->input->post('content');
         $authorid = $this->Login_model->get_user_id();
-        $createtime = date('Y-md-d H:i:s', time());
+        $createtime = time();
 		$info = array(
             "cid"=>$category,
             "title"=>$title,"author"=>$author,
             "description"=>$description,
             "content"=>$content,
             "createtime"=>$createtime,
-            "author_id" => $authorid
+            "author_id" => $authorid,
+            "publish_time" => date("Y-m-d H:i:s", time())
         );
 		//插入文章并更新分类
 		if($this->Article_model->insert_article($info) && $this->Article_model->update_cate($category,1)){
