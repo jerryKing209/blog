@@ -37,7 +37,7 @@ class Comment_model extends CI_Model{
         $this->db->where('article.author_id', $uid);
         $query = $this->db->get();
         $commentnums = $query->result();
-        log_message('info', " commentnums:".$commentnums);
+        log_message('info', " commentnums:".json_encode($commentnums));
         return $commentnums ?: 0;
     }
 
