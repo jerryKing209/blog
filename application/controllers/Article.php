@@ -86,8 +86,16 @@ class Article extends CI_Controller {
 		$author = $this->input->post('author');
 		$description = $this->input->post('description');
 		$content = $this->input->post('content');
-		$createtime = time();
-		$info = array("cid"=>$category,"title"=>$title,"author"=>$author,"description"=>$description,"content"=>$content,"createtime"=>$createtime);
+        $authorid = $this->Login_model->get_user_id();
+        $createtime = date('Y-md-d H:i:s', time());
+		$info = array(
+            "cid"=>$category,
+            "title"=>$title,"author"=>$author,
+            "description"=>$description,
+            "content"=>$content,
+            "createtime"=>$createtime,
+            "author_id" => $authorid
+        );
 		//插入文章并更新分类
 		if($this->Article_model->insert_article($info) && $this->Article_model->update_cate($category,1)){
 			redirect('Article/index');
