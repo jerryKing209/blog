@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 *文件名：后台文章模块
 *时间：20170808
 -->
@@ -77,7 +77,7 @@ class Login extends CI_Controller{
 		}
 		$data['login_error'] = '';
 		//设置表单字段过滤规则
-		$this->form_validation->set_rules('username','用户名','required',array('required'=>'用户名不能为空'));
+		$this->form_validation->set_rules('username','用户名','required',array('required'=>'名称不能为空'));
 		$this->form_validation->set_rules('password','密码','required',array('required'=>'密码不能为空'));
 		//$this->form_validation->set_rules('checknum','验证码','required',array('required'=>'验证码不能为空'));
 		//判断过滤结果是否成功
