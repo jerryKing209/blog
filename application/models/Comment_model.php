@@ -31,12 +31,12 @@ class Comment_model extends CI_Model{
 
 /*获取评论数*/
 	function getcommentnum($uid){
-        $this->db->select('comment.id');
+        $this->db->select('count(comment.id)');
         $this->db->from('comment');
         $this->db->join('article', 'comment.article_id = article.id');
         $this->db->where('article.author_id', $uid);
         $query = $this->db->get();
-        $commentnums = $query->num_fields();
+        $commentnums = $query->result();
         log_message('info', " commentnums:".$commentnums);
         return $commentnums ?: 0;
     }
