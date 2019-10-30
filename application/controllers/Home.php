@@ -6,7 +6,7 @@ class Home extends CI_Controller{
 	public function __construct() {
 		parent::__construct();
 		$this->load->helper('url');
-		$this->load->model(array('Home_model','Login_model'));
+		$this->load->model(array('Home_model','Login_model','Article_model'));
         if($this->Login_model->is_logged_in()) {
             $this->_is_login = 1;
         }
