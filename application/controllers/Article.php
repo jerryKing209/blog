@@ -93,7 +93,7 @@ class Article extends CI_Controller {
             "title"=>$title,"author"=>$author,
             "description"=>$description,
             "content"=>$content,
-            "createtime"=>$createtime,
+            "create_time"=>$createtime,
             "author_id" => $authorid
         );
 		//插入文章并更新分类
