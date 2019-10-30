@@ -47,6 +47,7 @@ background: #eee;
           <div class="layui-input-inline">
             <input type="password" name="password" id="password" lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input" value = "<?php echo set_value('password');?>">
           </div>
+          <?php echo form_error('password','<p class="help-inline text-danger">','</p>');?>
       </div>
 
       <!--验证码-->
