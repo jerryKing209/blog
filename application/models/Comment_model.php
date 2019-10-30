@@ -47,7 +47,7 @@ class Comment_model extends CI_Model{
         $this->db->from('comment');
         $this->db->join('article', 'comment.article_id = article.id');
         $this->db->join('user', 'comment.user_id = user.uid');
-        $this->db->where('comment.article_id', $uid);
+        $this->db->where('article.author_id', $uid);
         $this->db->order_by('comment.id', 'DESC');
         $this->db->limit($offset, ($perPage-1) * $offset);
         $query = $this->db->get();
