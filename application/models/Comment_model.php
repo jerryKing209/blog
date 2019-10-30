@@ -31,14 +31,14 @@ class Comment_model extends CI_Model{
 
 /*获取评论数*/
 	function getcommentnum($uid){
-        $this->db->select('count(comment.id)');
+        $this->db->select('count(comment.id) as total');
         $this->db->from('comment');
         $this->db->join('article', 'comment.article_id = article.id');
         $this->db->where('article.author_id', $uid);
         $query = $this->db->get();
         $commentnums = $query->result();
         log_message('info', " commentnums:".json_encode($commentnums));
-        return $commentnums ?: 0;
+        return $commentnums['total'] ? $commentnums['total'] : 0;
     }
 
     /*获取后台评论列表*/
