@@ -36,8 +36,7 @@ class Comment_model extends CI_Model{
         $this->db->join('article', 'comment.article_id = article.id');
         $this->db->where('article.author_id', $uid);
         $query = $this->db->get();
-        $commentnums = $query->result();
-        log_message('info', " commentnums:".json_encode($commentnums));
+        $commentnums = $query->row_array();
         return $commentnums['total'] ? $commentnums['total'] : 0;
     }
 
