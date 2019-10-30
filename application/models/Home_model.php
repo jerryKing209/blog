@@ -77,7 +77,7 @@ class Home_model extends CI_Model{
 	function get_article_comment($aid){
 		$this->db->select('comment.*, user.username,user.head_img');
 		$this->db->from('comment');
-		$this->db->join('user', 'comment.user_id = user.uid');
+		$this->db->join('user', 'comment.user_id = user.uid', 'LEFT');
 		$this->db->where('comment.article_id', $aid);
         $this->db->order_by('comment.id', 'DESC');
         $this->db->limit(10);
