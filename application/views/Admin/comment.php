@@ -40,7 +40,7 @@
 				        <td><?php echo $var++; ?>.</td>
                         <td><?php echo $val['id']; ?></td>
                         <td><?php echo $val['comment']; ?></td>
-                        <td><?php echo $val['username']; ?></td>
+                        <td><?php echo $val['username']?: '游客'; ?></td>
                         <td><?php echo $val['title']; ?></td>
 							<td><?php echo $val['create_time']; ?></td>
 							<td><a href = "<?php echo site_url('Admin/delcomment')?>/<?php echo $val['id']; ?>" onclick = "javascript:return del()">删除</a>
