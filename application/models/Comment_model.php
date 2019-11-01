@@ -42,7 +42,6 @@ class Comment_model extends CI_Model{
 
     /*获取后台评论列表*/
     function get_admin_comments($perPage = 10,$offset = 0,$uid = 0){
-        $offset = ($offset < 1) ? 1 : $offset;
         $this->db->select('comment.*, article.title,user.username,user.head_img');
         $this->db->from('comment');
         $this->db->join('article', 'comment.article_id = article.id');

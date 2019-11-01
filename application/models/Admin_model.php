@@ -87,7 +87,7 @@ class Admin_model extends CI_Model{
         $this->db->select('comment.*, user.username,user.head_img');
         $this->db->from('comment');
         $this->db->join('user', 'comment.user_id = user.uid');
-        $this->db->where('comment.article_id', $aid);
+        $this->db->where('comment.article_id', $uid);
         $this->db->order_by('comment.id', 'DESC');
         $this->db->limit(10);
         $query = $this->db->get();
